@@ -105,31 +105,52 @@ gap: 10px;
 .btn:hover{
     background-color: darkcyan;
 }
+/* Basic navbar layout */
 .navbar {
   display: flex;
-  background: navy;
-}
-
-.navbar li {
   list-style: none;
-  position: relative;
+  background-color: #333;
+  padding: 50px;
+  margin: 0;
 }
 
-.navbar a {
-  color: white;
-  padding: 15px;
+.navbar li a {
   display: block;
+  padding: 30px 30px;
+  color: white;
   text-decoration: none;
 }
 
-/* Hide dropdown */
+.navbar li a:hover {
+  background-color: #555;
+}
+
+/* Hide dropdown by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  background: white;
+  background-color: white;
+  min-width: 200px;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-/* Show on hover */
+.dropdown-content li a {
+  color: black;
+  padding: 10px 30px;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown {
+  position: relative;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
