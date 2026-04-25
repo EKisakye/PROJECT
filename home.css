@@ -37,27 +37,21 @@ i{
 i:hoover{
     color: blue;
 }.hero {
-  background-image: url('school/image.png'); /* your image path here */
-  background-size: cover;        /* makes the image fill the whole section */
-  background-position: center;   /* centers the image */
+  background-image: url('school/image.png'); 
+  background-size: cover;        
+  background-position: center;   
   position: relative;
-  min-height: 400px;             /* control how tall the section is */
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
 
-/* This dark overlay goes ON TOP of the image */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;                      /* covers the full section */
-  background: rgba(0, 0, 0, 0.5); /* 0.5 = 50% dark — increase to make darker */
-}
+
 
 /* Text must be above the overlay */
 .hero-content {
   position: relative;
-  z-index: 1;                    /* this keeps text above the dark overlay */
+  z-index: 1;                    
   color: white;
   padding: 2rem;
 }
@@ -153,4 +147,138 @@ gap: 10px;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*  Css for APPLICATION FORM*/
+.App {
+  background-image: url('school/lab.png'); 
+  background-size: cover;        
+  background-position: center;   
+  position: relative;
+  min-height: 300px;             
+  display: flex;
+  align-items: center;
+}
+
+/* This dark overlay goes ON TOP of the image */
+.App::before {
+  content: '';
+  position: absolute;
+  inset: 0;                   
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Text must be above the overlay */
+.level {
+  position: relative;
+  z-index: 1;                    /* this keeps text above the dark overlay */
+  color: white;
+  padding: 2rem;
+}
+.App h1{
+    font-size: 60px;
+    color: yellowgreen;
+}
+.App p{
+    font-size: 20px;
+    color: burlywood;
+}
+.welcome{
+    font-size: 20px;
+   font-style: inherit;
+   padding-left: 20px;
+   text-align: justify;
+    color: black;
+}
+.account-bar{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+  position: absolute;
+}
+.form-container{
+  height: 100vh;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS FOR ABOUT PAGE*/
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+thead{
+    font-size: 30px;
+     text-decoration-line: underline ;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.fees table {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #2c3e50;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #eaf3ff;
+  transition: 0.3s;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.total {
+  background: #dfe6e9;
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse; /* removes double lines */
+}
+
+th, td {
+  border: 1px solid #e0e0e0; /* faint grey line */
+  padding: 12px;
+}
+
+.about-section{
+   margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9ff;
+  border-left: 5px solid #f39c12; /* orange accent */
+  border-radius: 6px;
 }
