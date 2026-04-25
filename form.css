@@ -44,3 +44,9 @@
   text-decoration: underline;
   position: absolute;
 }
+.form-container{
+  height: 100vh;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}

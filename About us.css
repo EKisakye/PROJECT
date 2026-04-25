@@ -1,0 +1,70 @@
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+thead{
+    font-size: 30px;
+     text-decoration-line: underline ;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.fees table {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #2c3e50;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #eaf3ff;
+  transition: 0.3s;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.total {
+  background: #dfe6e9;
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse; /* removes double lines */
+}
+
+th, td {
+  border: 1px solid #e0e0e0; /* faint grey line */
+  padding: 12px;
+}
