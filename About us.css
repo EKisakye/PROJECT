@@ -50,7 +50,6 @@ tbody tr:hover {
   background: #eaf3ff;
   transition: 0.3s;
 }
-
 td:first-child {
   font-weight: bold;
   text-align: left;
@@ -67,4 +66,40 @@ table {
 th, td {
   border: 1px solid #e0e0e0; /* faint grey line */
   padding: 12px;
+}
+nav{
+  background-color: #002147;
+  padding: 15px 0;
+}
+.navbar{
+    list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #ffd700;
+}
+.about-section{
+   display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 40px;
+  background: white;
+  padding: 20px;      
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 45%;
+}
+.about-section h2{
+  color: #002147;
+}
+h2 i {
+  color: #ffd700;      /* gold color */
+  margin-right: 10px;  /* space between icon and text */
 }
