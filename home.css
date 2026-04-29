@@ -1,366 +1,286 @@
-    .container{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-padding:10px;
-}
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.box{
-padding:10px;
-}
-h2{
-font-size:28px;
-font-weight:bold;
-margin-bottom:15px;
-}
-h3{
-    font-size: 28;
-    font-weight:bold;
-    margin-bottom: 15px;
-}
-h4{
-font-size:28px;
-font-weight:bold;
-margin-bottom:15px;
-}
-h5{
-font-size:28px;
-font-weight:bold;
-margin-bottom:15px;
-}
-i{
-    font-size: 30px;
-    margin: 10px;
-    color: black;
-    padding: 10px;
-}
-i:hoover{
-    color: blue;
-}.hero {
-  background-image: url('school/image.png'); 
-  background-size: cover;        
-  background-position: center;   
-  position: relative;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-
-}
-
-
-
-/* Text must be above the overlay */
-.hero-content {
-  position: relative;
-  z-index: 1;                    
-  color: white;
-  padding: 2rem;
-}
-.hero h1{
-    font-size: 5em;
-    margin-bottom: 10px;
-}
-.hero p{
-    font-size: 2em;
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-.pass{
-    background-color:orangered;
-    padding: 20px;
-    border: none;
-
-}
-h6{
-    font-size: 40px;
-    text-align: center;
-    background-color: orangered;
-    padding-bottom: 70px;
-}
-.school {
-display: flex;
-gap: 10px;
-
-}
-.part h1{
-     font-size: 30px;
-}
-.part{
-    font-size: 15px;
-}
-.btn{
-    background-color: orangered;
-    color: whitesmoke;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: darkcyan;
-}
-/* Basic navbar layout */
-.navbar {
-  display: flex;
-  list-style: none;
-  background-color: #333;
-  padding: 50px;
+/* RESET */
+*{
   margin: 0;
-}
-
-.navbar li a {
-  display: block;
-  padding: 30px 30px;
-  color: white;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #555;
-}
-
-/* Hide dropdown by default */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 200px;
-  list-style: none;
   padding: 0;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-sizing: border-box;
 }
 
-.dropdown-content li a {
-  color: black;
-  padding: 10px 30px;
+/* BODY */
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.8;
 }
 
-.dropdown-content li a:hover {
-  background-color: #f0f0f0;
-}
-
-/* Show dropdown on hover */
-.dropdown {
-  position: relative;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*  Css for APPLICATION FORM*/
-.App {
-  background-image: url('school/lab.png'); 
-  background-size: cover;        
-  background-position: center;   
-  position: relative;
-  min-height: 300px;             
+/* NAVBAR */
+.navbar{
+  background: #002147;
   display: flex;
-  align-items: center;
-}
-
-/* This dark overlay goes ON TOP of the image */
-.App::before {
-  content: '';
-  position: absolute;
-  inset: 0;                   
-  background: rgba(0, 0, 0, 0.5);
-}
-
-/* Text must be above the overlay */
-.level {
-  position: relative;
-  z-index: 1;                    /* this keeps text above the dark overlay */
-  color: white;
-  padding: 2rem;
-}
-.App h1{
-    font-size: 60px;
-    color: yellowgreen;
-}
-.App p{
-    font-size: 20px;
-    color: burlywood;
-}
-.welcome{
-    font-size: 20px;
-   font-style: inherit;
-   padding-left: 20px;
-   text-align: justify;
-    color: black;
-}
-.account-bar{
-  display: flex;
-  justify-content: space-between;
-  text-decoration: underline;
-  position: absolute;
-}
-.form-container{
-  height: 100vh;
-  border: none;
   justify-content: center;
   align-items: center;
+  gap: 35px;
+  list-style: none;
+  padding: 18px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
-/* CSS FOR ABOUT PAGE*/
-h4{
-    font-size: 20px;
-    text-align: center;
-}
-thead{
-    font-size: 30px;
-     text-decoration-line: underline ;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  margin: 0;
-  padding: 20px;
+.navbar li{
+  position: relative;
 }
 
-.fees table {
-  max-width: 1000px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-thead {
-  background: #2c3e50;
+.navbar a{
+  text-decoration: none;
   color: white;
-}
-
-th, td {
-  padding: 12px;
-  text-align: center;
-}
-
-tbody tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-tbody tr:hover {
-  background: #eaf3ff;
+  font-size: 15px;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-td:first-child {
-  font-weight: bold;
-  text-align: left;
+.navbar a:hover{
+  color: #ffd700;
 }
 
-.total {
-  background: #dfe6e9;
-  font-weight: bold;
-}
-table {
-  border-collapse: collapse; /* removes double lines */
+/* DROPDOWN */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: white;
+  min-width: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
-th, td {
-  border: 1px solid #e0e0e0; /* faint grey line */
-  padding: 12px;
+.dropdown-content li{
+  list-style: none;
 }
 
-.about-section{
-   margin-top: 30px;
+.dropdown-content a{
+  display: block;
+  padding: 12px 15px;
+  color: #002147;
+}
+
+.dropdown-content a:hover{
+  background: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/* HERO SECTION */
+.hero{
+  height: 90vh;
+  background: linear-gradient(rgba(0,33,71,0.6), rgba(0,33,71,0.6)),
+  url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop')
+  center/cover no-repeat;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
   padding: 20px;
-  background-color: #f8f9ff;
-  border-left: 5px solid #f39c12; /* orange accent */
-  border-radius: 6px;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-  color: #333;
-}
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background: #f5f7fa;
-  color: #333;
 }
 
-.container {
-  width: 90%;
+.hero-content{
+  max-width: 850px;
+}
+
+.hero h1{
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p{
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #ffd700;
+}
+
+/* BUTTON */
+.pass{
+  background: #ffd700;
+  color: #002147;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pass:hover{
+  background: white;
+  transform: translateY(-3px);
+}
+
+/* WELCOME TEXT */
+body > p{
   max-width: 1100px;
   margin: auto;
+  padding: 0 20px 40px;
+  font-size: 17px;
 }
 
-/* SECTION */
-.info-section {
-  padding: 60px 0;
+/* SECTION TITLE */
+h6{
+  text-align: center;
+  font-size: 35px;
+  color: #002147;
+  margin: 50px 0 20px;
 }
 
-.info-section .container {
+/* INFO SECTION */
+.info-section{
+  padding: 60px 20px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
-/* COLUMNS */
-.left, .right {
+.left,
+.right{
   flex: 1;
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
-/* HEADINGS */
-h2 {
-  color: #0d47a1;
-  margin-bottom: 10px;
+.left:hover,
+.right:hover{
+  transform: translateY(-5px);
 }
 
-/* LISTS */
-ul, ol {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* MOTTO STYLE */
-.motto {
-  font-style: italic;
-  font-size: 18px;
-  color: #444;
-}
-
-.motto span {
-  display: block;
-  font-size: 14px;
-  color: #777;
-}
-
-/* ABOUT SECTION */
-.about {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.about h2 {
+.left h2,
+.right h2{
+  color: #002147;
+  margin-bottom: 15px;
   font-size: 28px;
 }
 
-.about p {
-  max-width: 700px;
-  margin: 20px auto;
-  line-height: 1.6;
+.left p,
+.right p{
+  margin-bottom: 20px;
+}
+
+ol,
+ul{
+  padding-left: 20px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+/* MOTTO */
+.motto{
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.motto span{
+  display: block;
+  color: #555;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+/* ABOUT SECTION */
+.about{
+  padding: 70px 20px;
+}
+
+.about .container{
+  display: block;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.about h2{
+  color: #002147;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.about p{
+  font-size: 17px;
+  color: #555;
+}
+
+/* FOOTER */
+footer{
+  background: #002147;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer i{
+  color: white;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+footer i:hover{
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hero{
+    height: 75vh;
+  }
+
+  .hero h1{
+    font-size: 34px;
+  }
+
+  .hero p{
+    font-size: 18px;
+  }
+
+  .container{
+    flex-direction: column;
+  }
+
+  h6{
+    font-size: 28px;
+  }
+
+  .left,
+  .right{
+    padding: 25px;
+  }
 }
