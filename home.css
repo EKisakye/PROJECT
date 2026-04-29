@@ -152,7 +152,7 @@ body{
 }
 
 .welcome-text{
-  background:white;
+  background:linear-gradient(rgb(233, 211, 169), white);
   padding:30px;
   border-radius:15px;
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
@@ -175,7 +175,7 @@ body{
 
 .left,.right{
   flex:1;
-  background:white;
+ background:linear-gradient(rgb(233, 211, 169), white);
   padding:25px;
   border-radius:15px;
   box-shadow:0 5px 15px rgba(0,0,0,0.08);
@@ -204,6 +204,10 @@ footer i{
   color:white;
   font-size:20px;
   margin:0 10px;
+  cursor: pointer;
+}
+footer i:hover{
+  color: orange;
 }
 
 /* ================= MOBILE ================= */
@@ -300,4 +304,19 @@ footer i{
   .table-title{
     font-size:24px;
   }
+}
+/* Application form*/
+.App{
+  padding: 30px;
+  
+}
+.level h1{
+  padding: 30px;
+  background-color: linear-gradient(orange, white);
+  border-left: 10px solid orange;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.level p{
+  padding :30px;
 }
