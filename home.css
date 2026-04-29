@@ -44,6 +44,7 @@ i:hoover{
   min-height: 400px;
   display: flex;
   align-items: center;
+
 }
 
 
@@ -281,4 +282,85 @@ th, td {
   background-color: #f8f9ff;
   border-left: 5px solid #f39c12; /* orange accent */
   border-radius: 6px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* SECTION */
+.info-section {
+  padding: 60px 0;
+}
+
+.info-section .container {
+  display: flex;
+  gap: 40px;
+}
+
+/* COLUMNS */
+.left, .right {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h2 {
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+/* LISTS */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* MOTTO STYLE */
+.motto {
+  font-style: italic;
+  font-size: 18px;
+  color: #444;
+}
+
+.motto span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 28px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
 }
