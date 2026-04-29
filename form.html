@@ -5,28 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
     <link rel="StyleSheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
-     <ul class="navbar">
+     <header class="top-header">
+
+  <div class="school-brand">
+    <img src="badge.png" class="badge" alt="Badge">
+    <div class="brand-text">
+      <h2>SEROMA CHRISTIAN HIGH SCHOOL</h2>
+      <p>Home of Excellence</p>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+</header>
+
+<!-- NAVBAR -->
+<ul class="navbar" id="navbar">
   <li><a href="/home.html">HOME</a></li>
-  <li><a href="About Us.html">ABOUT US</a></li>
+  <li><a href="/About Us.html">ABOUT US</a></li>
   <li><a href="/form.html">APPLICATION FORM</a></li>
-  <li><a href="Gallery.html">OUR GALLERY</a></li>
+  <li><a href="/Gallery.html">GALLERY</a></li>
 
   <li class="dropdown">
-    <a href="#">THE SCHOOL</a>
-
+         THE SCHOOL
     <ul class="dropdown-content">
       <li><a href="#">TimeTable</a></li>
       <li><a href="#">Fees Structure</a></li>
-      <li><a href="#">Facilities & Services</a></li>
-      
+      <li><a href="#">Facilities</a></li>
     </ul>
   </li>
+</ul>
 
   
-</ul>
+
        <div class="App">
         <div class="level">
         <h1>ONLINE APPLICATIONS ARE OPEN IN 2026</h1>
@@ -41,9 +59,27 @@ Once submitted, make sure to regularly check the status of your application for 
   </a>
 </div>
 <div class="form-container">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGocJbV870iYfdIyJxIIzOiy1MQNh_LPxP-FEL7J4Zv4J6RQ/viewform?usp=publish-editor" width="1200" height="480" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGocJbV870iYfdIyJxIIzOiy1MQNh_LPxP-FEL7J4Zv4J6RQ/viewform?usp=publish-editor"
+ width="600" 
+ height="480"
+ frameborder="0"></iframe>
 
 </div>
 
 </body>
+<footer>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-twitter"></i>
+</footer>
+
+<script>
+const toggle = document.getElementById("toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.onclick = () => {
+  navbar.classList.toggle("active");
+};
+</script>
 </html>

@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEROMA</title>
-    <link rel="StyleSheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head> 
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SEROMA</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="StyleSheet" href="home.css">
+</head>
+
 <body>
-    <ul class="navbar">
+
+<!-- HEADER -->
+<header class="top-header">
+
+  <div class="school-brand">
+    <img src="badge.png" class="badge" alt="Badge">
+    <div class="brand-text">
+      <h2>SEROMA CHRISTIAN HIGH SCHOOL</h2>
+      <p>Home of Excellence</p>
+    </div>
+  </div>
+
+  <div class="menu-toggle" id="toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+</header>
+
+<!-- NAVBAR -->
+<ul class="navbar" id="navbar">
   <li><a href="/home.html">HOME</a></li>
-  <li><a href="About Us.html">ABOUT US</a></li>
+  <li><a href="/About Us.html">ABOUT US</a></li>
   <li><a href="/form.html">APPLICATION FORM</a></li>
-  <li><a href="Gallery.html">OUR GALLERY</a></li>
+  <li><a href="/Gallery.html">GALLERY</a></li>
+<div class="timetable-controls">
+  <label for="programSelect">School Program:</label>
 
-  <li class="dropdown">
-    <a href="#">THE SCHOOL</a>
-
-    <ul class="dropdown-content">
-      <li><a href="#">TimeTable</a></li>
-      <li><a href="#">Fees Structure</a></li>
-      <li><a href="#">Facilities & Services</a></li>
-      
-    </ul>
-  </li>
-
-  
+    <select id="programSelect">
+      <option value="daily">Daily Routine</option>
+      <option value="academic">Academic Lessons</option>
+      <option value="weekend">Weekend Program</option>
+    </select>
+    </div>
 </ul>
-    
-    <div class="hero">
-        <div class="hero-content">
-        <h1>WELCOME TO SEROMA CHRISTIAN HIGH SCHOOL</h1>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>WELCOME TO SEROMA CHRISTIAN HIGH SCHOOL</h1>
     <p>"Home of Excellence"</p>
     <button class="pass">Apply Here</button>
-    </div>
-</div><br><br>
-WELCOME REMARKS BY THE RESIDENT DIRECTOR<br>
+  </div>
+</section>
 
-<p>It is with great joy and excitement that I welcome you all to this special occasion at SEROMA Christian High School. <br>As the Resident Director, I am truly honored to see so many bright and eager faces, ready to embark on a new chapter of learning and growth.<br>
+<!-- WELCOME TEXT -->
+<section class="welcome-section">
+  <h2 class="welcome-title">Welcome Remarks</h2>
 
-At SEROMA Christian High, we strive not only for academic excellence but also for nurturing character and building a strong foundation in faith.<br> Our mission is to help each student discover their true potential, develop a love for learning, and become responsible, compassionate individuals in society.<br>
+  <div class="welcome-text">
+    It is with great joy that I welcome you to SEROMA Christian High School...
+    We strive for excellence, discipline, and faith-based growth.
+    <br><br>
+    Resident Director: Mrs Amelia Kyambadde
+  </div>
+</section>
 
-We are committed to providing a safe, supportive, and inspiring environment for all our students, where they can grow in both knowledge and wisdom.<br> Whether you are joining us for the first time or returning for another year, we are here to guide and support you every step of the way.
-
-Once again, <br>welcome to the SEROMA Christian High School community. Let’s work together to make this year a truly remarkable one.<br> May this journey be filled with learning, growth, and success!
-
-Thank you, and God bless you all.<br>
-Resident Director: Mrs Amelia Kyambadde</p>
-     <h6>VISION & MISSION</h6>
-    <section class="info-section">
+<!-- INFO -->
+<section class="info-section">
   <div class="container">
-    
     <div class="left">
-      <h2>Our Vision</h2>
-      <p>The Global Hub for Christ-Centred Education and Services.</p>
-
-      <h2>Core Values</h2>
-      <ol>
-        <li>Lordship</li>
-        <li>Excellence</li>
-        <li>Integrity</li>
-        <li>Team Work</li>
-      </ol>
+      <h2>Vision</h2>
+      <p>Global Hub for Christ-Centred Education</p>
     </div>
 
     <div class="right">
-      <h2>Our Motto</h2>
-      <p class="motto">“Heads but not tails” <span>Deut. 28:13</span></p>
-
-      <h2>Strategic Objectives</h2>
-      <ul>
-        <li>To create a conducive environment for effective Christian discipleship.</li>
-        <li>Train skilled transformational leaders.</li>
-        <li>Promote holistic development for students and staff.</li>
-        <li>Provide an excellent academic atmosphere and services.</li>
-      </ul>
+      <h2>Mission</h2>
+      <p>To nurture disciplined and skilled leaders</p>
     </div>
-
   </div>
 </section>
 
+<!-- ABOUT -->
 <section class="about">
   <div class="container">
     <h2>About Our School</h2>
-    <p>We are one of the best, most diverse secondary schools in Uganda...</p>
+    <p>We are one of the best secondary schools in Uganda...</p>
   </div>
 </section>
-  
+
+<!-- FOOTER -->
+<footer>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-brands fa-twitter"></i>
+</footer>
+
+<script>
+const toggle = document.getElementById("toggle");
+const navbar = document.getElementById("navbar");
+
+toggle.onclick = () => {
+  navbar.classList.toggle("active");
+};
+</script>
 
 </body>
-
-<footer>
-   <i class="fa-solid fa-house"></i>
-<a href="https://facebook.com" target="_blank">
-    <i class="fa-brands fa-facebook"></i>
-</a>
-<a href="https://instagram.com" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-</a>
-<a href="https://youtube.com" target="_blank">
-    <i class="fa-brands fa-youtube"></i>
-</a>
-<a href="https://twitter.com" target="_blank">
-    <i class="fa-brands fa-twitter"></i>
-</a>
-
-</footer>
 </html>
