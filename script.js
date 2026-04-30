@@ -92,7 +92,7 @@ form.addEventListener("submit", function(e) {
 
     if (isValid) {
         alert("Application submitted successfully ✅");
-
+        window.location.href = "index.html";
         // OPTION 1: Reset form
         form.reset();
 
