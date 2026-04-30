@@ -1,3 +1,22 @@
+/* MENU BUTTON TO X-BUTTON*/
+
+const toggle = document.getElementById("toggle");
+const navbar = document.getElementById("navbar");
+
+
+toggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+
+  if (navbar.classList.contains("active")) {
+    toggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  } else {
+    toggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  }
+});
+
+
+
+            /* IMAGE SLIDER*/
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalid = null;
@@ -80,6 +99,9 @@ form.addEventListener("submit", function(e) {
         // OPTION 2 (REAL SUBMIT TO SERVER)
         // form.submit();
     }
+    else{
+        alert("Kibulamu bossman");
+    }
 });
 
 // VALIDATION FUNCTION
@@ -114,6 +136,8 @@ function validateInput() {
 
     // AGGREGATES (NUMBERS ONLY)
     checkNumber(aggregates, "Enter valid aggregates");
+     
+    return true;
 }
 
 // ================= HELPERS =================
@@ -122,7 +146,8 @@ function validateInput() {
 function checkRequired(input, message) {
     if (input.value.trim() === "") {
         setError(input, message);
-    } else {
+    } 
+    else {
         setSuccess(input);
     }
 }
@@ -167,6 +192,7 @@ function checkGender() {
         if (radio.checked) {
             selected = true;
         }
+        
     });
 
     const container = document.getElementById("gender");
@@ -196,3 +222,7 @@ function setSuccess(input) {
     parent.classList.add("success");
     parent.classList.remove("error");
 }
+
+
+/* menu button to x button*/
+

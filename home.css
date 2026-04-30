@@ -267,14 +267,14 @@ img.displayslide{
   font-size: 2rem;
   padding: 10px 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: white;
+  color: rgb(249, 246, 252);
   border: none;
   cursor: pointer;
 }
 .prev{
   left: 0;
 }
-.next{
+ .next{
   right: 0;
 }
 @keyframes fade {
@@ -403,7 +403,7 @@ input, select, textarea {
     width: auto;
 }
 
-button {
+.submit button {
     margin-top: 20px;
     width: 100%;
     padding: 12px;
@@ -415,7 +415,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.submit button:hover {
     background: #0056b3;
 }
 
