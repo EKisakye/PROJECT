@@ -15,48 +15,39 @@ toggle.addEventListener("click", () => {
 });
 
 
+const hero = document.querySelector(".hero");
 
-            /* IMAGE SLIDER*/
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalid = null;
+const images = [
+    "school/gallery-1.jpg",
+    "school/gallery-2.jpg",
+    "school/gallery-3.jpg",
+    "school/gallery-4.jpg",
+    "school/gallery-5.jpg",
+    "school/gallery-6.jpg",
+    "school/hero-campus.jpg",
+    "school/image.png",
+    "school/lab.png",
+    "school/pool.png",
 
-//initializeSlider();
-document.addEventListener("DOMContentLoaded", initializeSlider)
+];
 
-function initializeSlider(){
-    if(slides.length > 0){
-        slides[slideIndex].classList.add("displayslide");
-        intervalid = setInterval(nextSlide, 5000);
+let index = 0;
+
+function changeHeroBackground(){
+    hero.style.backgroundImage = `url(${images[index]})`;
+
+    index++;
+
+    if(index >= images.length){
+        index = 0;
     }
-
 }
 
-function showSlide(index){
-    if(index >= slides.length){
-        slideIndex = 0;
-    }
+// first image load
+changeHeroBackground();
 
-    else if(index < 0){
-        slideIndex = slides.length - 1;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("displayslide")
-    });
-    slides[slideIndex].classList.add("displayslide");
-}
-
-function prevSlide(){
-    clearInterval(intervalid);
-    slideIndex--;
-    showSlide(slideIndex);
-}
-
-function nextSlide(){
-    slideIndex++;
-    showSlide(slideIndex);
-}
+// auto change every 5 seconds
+setInterval(changeHeroBackground, 5000);
 
 /* the code about form validation when applying to seroma high school
 */
@@ -137,7 +128,9 @@ function validateInput() {
     // AGGREGATES (NUMBERS ONLY)
     checkNumber(aggregates, "Enter valid aggregates");
      
-    return true;
+      const errors = document.querySelectorAll(".error");
+
+    return errors.length === 0;
 }
 
 // ================= HELPERS =================

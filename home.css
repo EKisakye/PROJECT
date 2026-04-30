@@ -105,10 +105,8 @@ body{
 /* ================= HERO ================= */
 .hero{
   height:85vh;
-  background:linear-gradient(rgba(0,33,71,0.6), rgba(0,33,71,0.6)),
-  url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600')
-  center/cover no-repeat;
-
+  background:linear-gradient(rgba(0,33,71,0.6), rgba(0,33,71,0.6)),;
+  transition: background-image 1s ease-in-out;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -245,38 +243,7 @@ footer i:hover{
   }
 }
 
-.slider{
-  position:relative;
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-.slider img{
-  width: 100%;
-  display: none;
-}
-img.displayslide{
-  display: block;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.slider button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  padding: 10px 15px;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  color: rgb(249, 246, 252);
-  border: none;
-  cursor: pointer;
-}
-.prev{
-  left: 0;
-}
- .next{
-  right: 0;
-}
+
 @keyframes fade {
   from{opacity: .5}
   to {opacity: 1;}
@@ -476,4 +443,33 @@ form small {
   position: relative;
   float: right;
   top: -30px;
+}
+ /* gallery */
+
+ .cards{
+   background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  
+ }
+.grid{
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.cards img{
+  width: 100%;
+  border-radius: 10px;
+  height: 220px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+.cards img:hover{
+  transform: scale(1.02);
 }
