@@ -56,15 +56,21 @@ Once submitted, make sure to regularly check the status of your application for 
 </div>
 <div class="container">
 
-    <form action="#" method="post">
+    <form action="#" method="post" id="form">
         <label>Surname</label>
-        <input type="text" name="surname" required>
+        <input type="text" name="surname" id="surname" required>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Other Names</label>
-        <input type="text" name="othernames" required>
+        <input type="text" name="othernames" id="othernames" required>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Sex</label>
-        <div class="radio-group">
+        <div class="radio-group" id="gender">
             <input type="radio" name="sex" value="Male"> Male
             <input type="radio" name="sex" value="Female"> Female
             <i class="fas fa-check-circle"></i>
@@ -73,97 +79,97 @@ Once submitted, make sure to regularly check the status of your application for 
         </div>
 
         <label>District of Birth</label>
-        <input type="text" name="birthdistrict">
+        <input type="text" name="birthdistrict" id="birthdistrict">
         <i class="fas fa-check-circle"></i>
         <i class="fas fa-exclamation-circle"></i>
         <small>Error message</small>
 
         <label>Religion</label>
-        <input type="text" name="religion">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="religion" id="religion">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Home District</label>
-        <input type="text" name="homedistrict">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="homedistrict" id="homedistrict">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Nationality</label>
-        <input type="text" name="nationality">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="nationality" id="nationality">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Current Residential Area</label>
-        <input type="text" name="residence">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="residence" id="residence">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Village</label>
-        <input type="text" name="village">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="village" id="village">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>LC1</label>
-        <input type="text" name="lc1">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="lc1" id="lc1">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Home Address</label>
-        <input type="text" name="address">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="address" id="address">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Telephone Contact</label>
-        <input type="tel" name="phone">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="tel" name="phone" id="phone">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Father's Name</label>
-        <input type="text" name="fathername">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="fathername" id="fathername">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Father's Contact</label>
-        <input type="tel" name="fatherphone">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="tel" name="fatherphone" id="fatherphone">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Mother's Name</label>
-        <input type="text" name="mothername">
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <input type="text" name="mothername" id="mothername">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <label>Mother's Contact</label>
-        <input type="tel" name="motherphone">
+        <input type="tel" name="motherphone" id="motherphone">
          <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
 
         <label>Former School</label>
-        <input type="text" name="formerschool">
+        <input type="text" name="formerschool" id="formerschool">
          <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
 
         <label>Aggregates Obtained</label>
-        <input type="text" name="aggregates">
+        <input type="text" name="aggregates" id="aggregates">
          <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
 
         <label>Division</label>
-        <select name="division">
+        <select name="division" id="division">
             <option value="">Select Division</option>
             <option>1</option>
             <option>2</option>
@@ -174,7 +180,7 @@ Once submitted, make sure to regularly check the status of your application for 
             <small>Error message</small>
 
         <label>Class to which admission is sought</label>
-        <select name="class">
+        <select name="class" id="class">
             <option value="">Select Class</option>
             <option>Senior 1</option>
             <option>Senior 2</option>
@@ -188,16 +194,16 @@ Once submitted, make sure to regularly check the status of your application for 
             <small>Error message</small>
 
         <label>Hobbies</label>
-        <textarea name="hobbies"></textarea>
+        <textarea name="hobbies" id="hobbies"></textarea>
          <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
 
         <label>Do you have any medical problem? (If yes, specify)</label>
-        <textarea name="medical"></textarea>
-         <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Error message</small>
+        <textarea name="medical" id="medical"></textarea>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
 
         <button type="submit">Submit Application</button>
 
@@ -210,6 +216,7 @@ Once submitted, make sure to regularly check the status of your application for 
 
 </div>
 
+<script src="script.js"></script>
 </body>
 <footer>
   <p>&copy; <script>document.write(new Date().getFullYear())</script> Seroma Christian High School</p>
