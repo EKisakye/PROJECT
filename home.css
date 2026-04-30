@@ -361,6 +361,7 @@ img.displayslide{
 .level p{
   padding :30px;
 }
+
 .container {
     max-width: 700px;
     margin: auto;
@@ -422,4 +423,57 @@ button:hover {
     font-size: 12px;
     color: #888;
     margin-top: 15px;
+}
+/* FORM STATES */
+form div,
+form label,
+form input,
+form select,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form small {
+  color: red;
+  visibility: hidden;
+  font-size: 12px;
+}
+
+/* ERROR */
+.error input,
+.error select,
+.error textarea {
+  border: 2px solid red;
+}
+
+.error small {
+  visibility: visible;
+}
+
+/* SUCCESS */
+.success input,
+.success select,
+.success textarea {
+  border: 2px solid green;
+}
+
+/* ICONS */
+.success .fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+
+.error .fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.fa-check-circle,
+.fa-exclamation-circle {
+  visibility: hidden;
+  position: relative;
+  float: right;
+  top: -30px;
 }
