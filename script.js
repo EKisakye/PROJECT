@@ -15,40 +15,6 @@ toggle.addEventListener("click", () => {
 });
 
 
-const hero = document.querySelector(".hero");
-
-const images = [
-    "school/gallery-1.jpg",
-    "school/gallery-2.jpg",
-    "school/gallery-3.jpg",
-    "school/gallery-4.jpg",
-    "school/gallery-5.jpg",
-    "school/gallery-6.jpg",
-    "school/hero-campus.jpg",
-    "school/image.png",
-    "school/lab.png",
-    "school/pool.png",
-
-];
-
-let index = 0;
-
-function changeHeroBackground(){
-    hero.style.backgroundImage = `url(${images[index]})`;
-
-    index++;
-
-    if(index >= images.length){
-        index = 0;
-    }
-}
-
-// first image load
-changeHeroBackground();
-
-// auto change every 5 seconds
-setInterval(changeHeroBackground, 5000);
-
 /* the code about form validation when applying to seroma high school
 */
 // SELECT FORM
@@ -76,24 +42,31 @@ const division = document.getElementById("division");
 const studentClass = document.getElementById("class");
 
 // FORM SUBMIT
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+if (form) {
 
-    const isValid = validateInput();
+    form.addEventListener("submit", function(e) {
 
-    if (isValid) {
-        alert("Application submitted successfully ✅");
-        window.location.href = "index.html";
-        // OPTION 1: Reset form
-        form.reset();
+        e.preventDefault();
 
-        // OPTION 2 (REAL SUBMIT TO SERVER)
-        // form.submit();
-    }
-    else{
-        alert("Kibulamu bossman");
-    }
-});
+        const isValid = validateInput();
+
+        if (isValid) {
+
+            alert("Application submitted successfully ✅");
+
+            form.reset();
+
+            window.location.href = "home.html";
+
+        } else {
+
+            alert("Please fill the required fields correctly");
+
+        }
+
+    });
+
+}
 
 // VALIDATION FUNCTION
 function validateInput() {
@@ -176,7 +149,7 @@ function checkSelect(select, message) {
     }
 }
 
-// GENDER VALIDATION
+// GENDER VALIDATIONds
 function checkGender() {
     const radios = document.getElementsByName("sex");
     let selected = false;
@@ -217,5 +190,46 @@ function setSuccess(input) {
 }
 
 
-/* menu button to x button*/
 
+
+/* IMAGE SLIDER */
+
+const hero = document.querySelector(".hero");
+
+const images = [
+    "school/gallery-1.jpg",
+    "school/gallery-2.jpg",
+    "school/gallery-3.jpg",
+    "school/gallery-4.jpg",
+    "school/gallery-5.jpg",
+    "school/gallery-6.jpg",
+    "school/hero-campus.jpg",
+    "school/image.png",
+    "school/lab.png",
+    "school/pool.png",
+];
+
+let index = 0;
+
+function changeHeroBackground() {
+
+    if (!hero) return;
+
+    hero.style.backgroundImage = `url(${images[index]})`;
+
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
+    }
+}
+
+/* ONLY RUN IF HERO EXISTS */
+
+if (hero) {
+
+    changeHeroBackground();
+
+    setInterval(changeHeroBackground, 5000);
+
+}
