@@ -179,7 +179,7 @@ function setError(input, message) {
 
     small.innerText = message;
     parent.classList.add("error");
-    parent.classList.remove("success");
+   // parent.classList.remove("success");
 }
 
 function setSuccess(input) {
@@ -197,15 +197,15 @@ function setSuccess(input) {
 const hero = document.querySelector(".hero");
 
 const images = [
-    "school/gallery-1.jpg",
-    "school/gallery-2.jpg",
-    "school/gallery-3.jpg",
-    "school/gallery-4.jpg",
-    "school/gallery-5.jpg",
-    "school/gallery-6.jpg",
-    "school/hero-campus.jpg",
-    "school/image.png",
-    "school/lab.png",
+    "school/s6.jpg",
+    "school/slop.jpg",
+    "school/present.jpg",
+    "school/pool.png",
+    "school/hall.webp",
+    "school/facility.jpg",
+    "school/children.jpg",
+    "school/champs.jpg",
+    "school/build.png",
     "school/pool.png",
 ];
 

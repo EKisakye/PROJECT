@@ -106,7 +106,10 @@ body{
 .hero{
   height:85vh;
   background:linear-gradient(rgba(0,33,71,0.6), rgba(0,33,71,0.6)),;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out ;
+   background-size: cover;      /* Makes image fit the section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;/* Prevents repeating */
   display:flex;
   justify-content:center;
   align-items:center;
