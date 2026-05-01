@@ -197,14 +197,12 @@ function setSuccess(input) {
 const hero = document.querySelector(".hero");
 
 const images = [
-    "school/s6.jpg",
-    "school/slop.jpg",
-    "school/present.jpg",
-    "school/pool.png",
+    "school/s6.png",
+    "school/build.jpeg",
+    "school/happy.jpeg",
+    "school/hola.jpeg",
     "school/hall.webp",
-    "school/facility.jpg",
-    "school/children.jpg",
-    "school/champs.jpg",
+    
     "school/build.png",
     "school/pool.png",
 ];
